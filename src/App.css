@@ -1,0 +1,298 @@
+.darkTheme{
+  background-color: black;
+  color: aliceblue;
+  min-height: 100vh;
+}
+
+.lightTheme{
+  background-color: white;
+  color:black;
+  min-height: 100vh;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style: none;
+}
+body{
+  background-color: #eee;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+  display: none;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #333; 
+  border-radius: 10px;
+  display: none;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #333; 
+  display: block;
+}
+
+
+.side-menu{
+  position: fixed;
+  /* background: #282828; */
+  width: 200px;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 30px 20px;
+  transition: width .2s ease-in;
+}
+
+.side-menu.inactive{
+  width: 80px;
+}
+
+.sideMenuDarkTheme{
+  background-color: #282828;
+}
+
+.sideMenuLightTheme{
+  background-color: #000;
+}
+
+.side-menu .top-section{
+  position: relative;
+  margin-top: -3vh;
+}
+
+.side-menu .top-section .logo{
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  display: inline-block;
+}
+.side-menu .top-section .logo img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.side-menu .top-section .toggle-menu-btn{
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.side-menu.inactive .top-section .toggle-menu-btn{
+  right: -50px;
+}
+
+.side-menu .search-controller{
+  color: #fff;
+  position: relative;
+}
+
+.side-menu .search-controller .search-btn{
+  width: 40px;
+  height: 35px;
+  position: absolute;
+  background: transparent;
+  border: 0;
+  font-size: 20px;
+  color: #666;
+}
+
+.side-menu .search-controller input[type=text]{
+  border: 0;
+  outline: none;
+  height: 35px;
+  background: #333;
+  border-radius: 5px;
+  display: block;
+  margin: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 40px;
+  color: #666;
+}
+
+.side-menu .main-menu .menu-item{
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.side-menu .main-menu .menu-item.active{
+  background: #333;
+  border-radius: 5px;
+  color: #fff;
+}
+
+
+.side-menu .main-menu{
+  margin: 5px 0;
+  position: relative;
+  max-height: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-left: -40px;
+}
+/* not required any more */
+.side-menu.inactive .main-menu{
+ 
+}
+
+.side-menu .main-menu .menu-item .menu-icon{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.side-menu .main-menu .menu-item span{
+  position: absolute;
+  display: inline-block;
+  line-height: 40px;
+  opacity: 1;
+  transition: opacity .2s ease-in;
+}
+
+.side-menu.inactive .main-menu .menu-item span{
+  opacity: 0;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.side-menu .main-menu .sub-menu{
+  color: #333;
+  margin-left: 20px;
+  border-left: 1px solid #666;
+  box-sizing: border-box;
+  padding-left: 30px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .2s ease-in;
+}
+
+
+
+.side-menu .main-menu .sub-menu.active{
+  max-height: 200px;
+}
+
+.side-menu .main-menu .sub-menu a{
+  display: block;
+  margin: 5px 0;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #333;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+
+.side-menu .main-menu .sub-menu a.active{
+  /* change in background, not recorded in video */
+  background: #222;
+  display: block;
+  
+  border-radius: 5px;
+  color: #fff;
+
+}
+
+.divider{
+  width: 100%;
+  height: 1px;
+  border-radius: 1px;
+  background: #fff;
+}
+
+.container{
+  margin-left: 200px !important;
+  transition: margin-left .2s ease-in;
+  padding: 50px;
+  box-sizing: border-box;
+  max-width: -webkit-fill-available !important;
+  max-height: 100% !important;
+  margin-bottom: 0px;
+  /* width: auto;
+  height: auto;
+  margin-right: 10px; */
+}
+
+.container.inactive{
+  margin-left: 80px !important;
+  /* width: auto;
+  height: auto; */
+}
+
+.App{
+  width: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.containerAddTicket{
+  width:95%;
+  padding-top: 50px;
+  padding-right: 70px;
+  padding-left: 70px
+}
+h5.card-header{
+  background-color: #4869BF;
+  color: white;
+}
+.modal-body{
+  height: 150px;
+}
+input{
+  height:50px;
+}
+.chartStyle{
+  margin-top: 15vh;
+  width: 35vw !important;
+  height: 60vh !important;
+}
+.Header{
+  /* z-index: 1000; */
+  /* background-color: #282828; */
+  position: fixed;
+  width: 100vw;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+  left: -70px;
+}
+.dropdown-toggle .nav-link{
+  width: 8vw;
+}
+.show-errorMessage.errorColorRed{
+  color:red;
+}

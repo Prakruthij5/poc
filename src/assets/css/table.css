@@ -1,0 +1,181 @@
+.table-toolbar{
+  background-color: none;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: end;
+  
+}
+.header{
+  background-color: #4869BF;
+}
+
+table {
+  border-collapse: collapse;
+  width:100%;
+  border: 1px solid rgb(73, 3, 113);
+  height: 100%;
+  
+
+}
+.table-container{
+  padding-top: 30px;
+  height: 100%;
+}
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 5px;
+  font-size: 14px;
+}
+th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: #4869BF;
+  color: white;
+}
+.ActionBar{
+  width: 100%;
+  height:50px;
+  padding: 20px;
+  display: flex;
+  padding-right:10px;
+  justify-content: space-between;
+  
+
+}
+.filter{
+display: flex;
+}
+input{
+
+padding:10px;
+height: 35px;
+}
+.upDownArrow{
+  padding-left: 10px;
+ }
+.dropdown{
+  min-width:80px;
+  padding-right: 5px;
+ }
+
+.pagination-bar{
+  /* background-color: #4869BF; */
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-top: 10px;
+  padding-right: 50px;
+}
+.pageButton{
+  background-color:#4869BF ;
+  color: black;
+}
+.Dropdown-Item:hover{
+  color: red;
+}
+
+.filterMenu:hover{
+  background-color: #4869BF;
+  width: 100%;
+}
+
+.Dropdown.Item{
+  background-color: red;
+}
+.Dropdown.Toggle{
+  width:200px;
+  height:35px;
+}
+.dropdown-toggle {
+  white-space: nowrap;
+  width: 150px;
+  background-color: #4869BF ;
+}
+.btn:hover {
+  background-color: brown;
+}
+.filterCard{
+ 
+  height: 200px;
+  padding-top: 30px;
+}
+.btn-primary .bs-btn-bg{
+  background-color: red;
+}
+
+.filterMinWidth{
+  min-width: 35vw
+}
+.close{
+  border: none;
+  padding-left: 0;
+  padding-top: 0;
+  width: 20px;
+}
+
+/* Tooltip FirstColumn container */
+.tooltipDesignscrollFirstColumn {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip FirstColumn text */
+.tooltipDesignscrollFirstColumn .tooltipTextscrollFirstColumn {
+  visibility: hidden;
+  width: fit-content;
+  background-color: #BDC3C7;
+  color: black;
+  text-align: center;
+  padding: 1px 4px;
+  border-radius: 6px;
+  overflow: auto;
+
+  /* Position the tooltip FirstColumn text */
+  position: absolute;
+  z-index: 1;
+  bottom: 60%;
+  left: 50%;
+  margin-left: -60px;
+  /* Fade in tooltip FirstColumn */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Tooltip FirstColumn arrow */
+.tooltipDesignscrollFirstColumn .tooltipTextscrollFirstColumn::after {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 80%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #DCDCDC transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip FirstColumn container */
+.tooltipDesignscrollFirstColumn:hover .tooltipTextscrollFirstColumn {
+visibility: visible;
+opacity: 1;
+height: 55px;
+width: 500px;
+}
+
+
+.displayNone{
+  display: none;
+}
+
+.stripsTableLightTheme{
+  background-color:#EAEDED ;
+}
+.stripsTableDarkTheme{
+  background-color:#585e5e ;
+}
+.centerMargin{
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
